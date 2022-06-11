@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Poppins:wght@100;900&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>login</title>
+    <style>
+        body {
+            background-image: url("wallpapper.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            /* FONT FAMALY UNTUK MENGUBAH STYLE FONT  */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        hr {
+            width: 150px;
+            display: block;
+        }
+
+        section.container {
+            padding: 4em;
+        }
+
+        .mb-0 {
+            margin-bottom: 0px;
+        }
+
+        .login-model {
+            padding: 30px;
+            background-color: white;
+            width: 350px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 20px blue;
+            /* CARA MENGUBAH DIV KE TENGAH */
+            display: block;
+            margin: auto;
+        }
+
+        label,
+        input {
+            margin-left: 90px;
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            /* COLOR UNTUK MENGUBAH WARNA HURUF, BUKAN FONT COLOR  */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- SECTION ADALAH KUMPULAN DIV (KESEPAKATAN) -->
+
+<body onload="alert('Selamat Datang - inline')">
+    <section class="container">
+        <div class="login-model">
+            <h1 class="text-center mb-0">Login</h1>
+            <hr>
+            <br>
+            <form name"validasi" onsubmit="return validateForm()" method="post" action="">
+                <form action="">
+                    <label for="">Username</label>
+                    <br>
+                    <input type="text">
+                    <br><br>
+                    <label for="">Password</label>
+                    <br>
+                    <input type="password">
+                    <br><br>
+                    <input type="checkbox"> Remember me
+                    <br><br>
+                    <button>Login</button>
+                    <br><br>
+                </form>
+        </div>
+    </section>
+</body>
+<script>
+    function validateForm() {
+        var x = document.forms["validasi"]["nama"].value;
+        if (x == "admin" || x == "kahfi") {
+            alert('Selamat Datang');
+        } else {
+            alert('Kamu Bukan Admin');
+        }
+    }
+</script>
+<script type="text/javascript">
+    alert('ini javascript internal')
+</script>
+<script src="script.js"></script>
+
+</html>
